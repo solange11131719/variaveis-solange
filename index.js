@@ -1,55 +1,67 @@
-const nomeCompleto = "Solange Sales Generoso Dos Santos";
+const prompt = require('prompt-sync');
+const entrada = prompt();
+
+const { arrayBuffer } = require("stream/consumers");
+
+const nomeCompleto = "solange generoso";
 const anoNascimento = 1976;
 let anoAtual = 2024;
 let idade = 48;
 
-console.log("Olá eu sou " + nomeCompleto + " estamos no ano " + anoAtual + " minha idade é " + idade + " e sou nascida no ano de " + anoNascimento + ".");
+console.log("Olá eu sou " + nomeCompleto + " estamos no ano " + anoAtual + " minha idade é " + idade + " e sou nascido no ano " + anoNascimento);
 
 anoAtual = anoAtual + 1;
-idade = idade + 1;
-console.log("Olá meu nome ainda é " + nomeCompleto + "," + " estamos no ano de " + anoAtual + " e finalmente fiz " + idade + " anos, " + " como eu sou nascida em 1976 ano que vem faço 48 anos e as minhas responsabilidades aumentam.");
 
-console.log(`oi eu sou ${nomeCompleto} meu ano de nascimento é ${anoNascimento} meu ano atual é ${anoAtual} e minha idade é ${idade}`);
+console.log("Olá eu sou " + nomeCompleto + " estamos no ano " + anoAtual + " minha idade é " + idade + " empreendedorismo");
+
+console.log(`oi eu sou ${nomeCompleto} meu ano é ${anoNascimento} minha idade é ${idade}`)
+
+const loginCerto = "solange";
+const senhaCerto = 123;
+
+console.log("-----------------------------------------------------------");
+console.log("-       💥🚣🌴  🚣‍♂️​       -AGÊNCIA DE VIAGENS--  🌴🌴🌴☀️                 ");
+console.log("-----------------------------------------------------------");
+console.log("✈️Faça seu login");
+
+var login = entrada("digite seu login: ");
+var senha = entrada("digite sua senha: ");
+
+while(login != loginCerto){
+  console.log("login Incorreto");
+  login = entrada("digite seu login novamente: ");
+}
+
+while(senha != senhaCerto ){
+  console.log("login Incorreto");
+  senha = entrada("digite sua senha novamente: ");
+}
 
 const listaDeViagens = new Array(
-`Mexico` ,
-`Canada`,
-`Estados Unidos`,
-`Alemanha`,
-`Italia`,
- cont logincerto =" solange;
-  const senhaCerta = 1234;"
-console.log(" ");
-console.log('AGẼNCIAS DE VIAGENS');
-console.log(" ");
-
-console.log(" faça seu login");
-
-var login = entrada(" Digite seu login");
-var Senha = entrada(" Digite sua senha");
-
-while(login!= ){
-  console.log(" login Incorreto');
-   login = entrada(" Digite seu login novamente");
-  while("senha = senhaCerta");
-                                                     
-              
-}
+  ` Estados Unidos`,
+  `Egito`,
+  `turquia`,
+  `japão`,
+  `mexico`
+);
 console.log(listaDeViagens);
 
 console.log(listaDeViagens[4]);
-
 listaDeViagens.push("Coronel Vivida");
 console.log(listaDeViagens);
 
 listaDeViagens.splice(1,1);
 console.log(listaDeViagens);
 
-const idadeComprador = 24;
+var nomeComprador = entrada("qual é seu nome? ");
 
-if(idadeComprador <18){
-  console.log("Infelizmente, nao podemos vender as passagens para menor de idade");
+var idadeComprador = entrada("qual é a sua idade?");
+
+if(idadeComprador < 18){
+
+  console.log(`olá ${nomeComprador} ,se o senhor tiver acima de 18 anos poderá comprar o bilhete${idadeComprador} `);
+
 }
 if(idadeComprador >= 18){
-  console.log("Parabens! Voce adquiriu sua passagem com sucesso.");
+  console.log(`olá senhor (a) ${nomeComprar}, qual será o seu detino, temos várias opções de viagens!`);
 }
